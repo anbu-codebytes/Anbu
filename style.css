@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Character Section */
+.character-section .card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .emoji {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #007bff;
+}
+
+/* Responsive Layout for Cards */
+@media (max-width: 768px) {
+    .character-section .row {
+        display: block;
+    }
+}
+
+/* Memory Section List */
+.memories-section ul {
+    padding: 0;
+}
+
+.memories-section ul li {
+    background-color: #e9ecef;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.memories-section ul li:hover {
+    background-color: #d6d8db;
+}
+
+/* Education & Other Sections */
+.education-section, .status-section, .gallery-section {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    padding: 15px 0;
+    color: white;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #ffeb3b;
+}
+
+/* Text Alignments for Small Screens */
+@media (max-width: 600px) {
+    .card {
+        text-align: center;
+    }
+}
